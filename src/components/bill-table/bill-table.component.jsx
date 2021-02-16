@@ -1,17 +1,13 @@
 import React from "react";
-import "./bill-table.styles.css";
+import "./bill-table.styles.scss";
 
+import BILL_DATA from "./bills.data.js";
 class Table extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      bills: [
-        { id: 1, name: `Weed Bill`, stage: `not passed` },
-        { id: 2, name: `Bill of Weed`, stage: `not passed` },
-        { id: 3, name: "MJ Bill", stage: `in progress` },
-        { id: 4, name: "Sativa bill", stage: `passed` },
-      ],
+      bills: BILL_DATA,
     };
   }
 
